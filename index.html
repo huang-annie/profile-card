@@ -7,9 +7,45 @@
     <title>Vite App</title>
   </head>
   <body> 
-   <div class="w-screen h-screen bg-gradient-to-b from-blue-400 to-purple-400 flex justify-center items-center p-3"> 
-    <div class="w-full bg-white rounded-md">1234</div>
-  </div>
+   <div id="container" class="bg-teal-300 font-mono w-screen h-screen flex justify-center items-center" >
+     <div id="card" class="w-80 rounded-2xl bg-white ">
+       <div id="intro" class="relative">
+         <img
+           id="intor-bg" 
+           src="./src/assets/bg-pattern-card.svg" 
+           alt="intro-bg"
+           class="rounded-t-2xl"
+          />
+         <img 
+           id="intor-photo" 
+           src="./src/assets/image-victor.jpg" 
+           alt="intro-ph" 
+           class="rounded-full absolute top-20 left-28 border-4"
+          />
+         <div id="intor-text" class="text-center py-5 pt-20">
+           <div id="text-top" class="flex justify-center gap-x-2 pb-2">
+             <h1 id="name" class="font-bold">Huang-annie</h1>
+             <p id="age">17</p>
+           </div>
+           <p id="text-bottom" class="text-sm">Taipei</p>
+         </div>
+       </div>
+       <div id="rate" class="flex justify-evenly border-t-2 py-5 text-center">
+         <div id="rate1">
+           <p class="text-lg font-bold">80k</p>
+           <p class="text-xs">Followers</p>
+         </div>
+         <div id="rate2">
+           <p class="text-lg font-bold" >803k</p>
+           <p class="text-xs">Likes</p>
+         </div>
+         <div id="rate3">
+           <p class="text-lg font-bold">1.4k</p>
+           <p class="text-xs">Photos</p>
+         </div>
+       </div>
+     </div>
+    </div>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
